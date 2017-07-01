@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A2323a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="Swift_LX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miku_full" translatesAutoresizingMaskIntoConstraints="NO" id="PwS-Ai-vbA">
+                        <rect key="frame" x="22.5" y="5" width="107" height="107"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PwS-Ai-vbA" secondAttribute="height" multiplier="1:1" id="ILS-7d-Cjm"/>
+                            <constraint firstAttribute="width" constant="107" id="xuq-pJ-v37"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f7B-Oh-us6">
+                        <rect key="frame" x="33" y="122" width="86" height="51.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图书馆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hje-RB-kLT">
+                                <rect key="frame" x="0.0" y="0.0" width="86" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeC-zW-Qfw">
+                                <rect key="frame" x="0.0" y="20.5" width="86" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="总场馆数">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="10" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=":1">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="个">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="10" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天还可预约:14场" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ais-BR-AkF">
+                                <rect key="frame" x="0.0" y="39.5" width="86" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PwS-Ai-vbA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ixp-y9-wQg"/>
+                <constraint firstItem="f7B-Oh-us6" firstAttribute="centerX" secondItem="PwS-Ai-vbA" secondAttribute="centerX" id="RI2-hE-9ed"/>
+                <constraint firstItem="PwS-Ai-vbA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="VYk-42-zqN"/>
+                <constraint firstItem="f7B-Oh-us6" firstAttribute="top" secondItem="PwS-Ai-vbA" secondAttribute="bottom" constant="10" id="ngK-eE-UIm"/>
+            </constraints>
+            <size key="customSize" width="172" height="171"/>
+            <connections>
+                <outlet property="CGCount" destination="JeC-zW-Qfw" id="UNn-u0-4QB"/>
+                <outlet property="canYYCount" destination="ais-BR-AkF" id="6Lc-dv-Ltc"/>
+                <outlet property="headImageView" destination="PwS-Ai-vbA" id="W1t-mP-lZs"/>
+                <outlet property="titleLabel" destination="hje-RB-kLT" id="HSd-DQ-xVi"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="-12.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Miku_full" width="2560" height="1440"/>
+    </resources>
+</document>
